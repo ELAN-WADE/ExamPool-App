@@ -1,0 +1,91 @@
+.statsRow {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+.statPill {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.statNum { font-weight: 700; color: var(--color-text); }
+
+.search { margin-bottom: 1rem; max-width: 380px; }
+
+.tableCard { padding: 0; overflow: hidden; }
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 3rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.subjectName { font-weight: 500; }
+.code { font-size: 0.78rem; color: var(--color-muted); background: var(--color-surface-2); padding: 0.15rem 0.4rem; border-radius: 6px; }
+.dateCell { font-size: 0.8rem; color: var(--color-muted); white-space: nowrap; }
+
+.teacherCell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+.teacherAvatar {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f7cff, #7c3aed);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.publishBtn   { background: var(--color-success-bg); color: var(--color-success); }
+.publishBtn:hover { background: rgba(34,197,94,0.25); }
+.unpublishBtn { background: var(--color-warning-bg); color: var(--color-warning); }
+.unpublishBtn:hover { background: rgba(245,158,11,0.25); }
+
+.createBtn { white-space: nowrap; }
+
+/* ── Form ──────────────────────────────────── */
+.form { display: flex; flex-direction: column; gap: 1rem; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+@media (max-width: 500px) { .formGrid { grid-template-columns: 1fr; } }
+
+.teacherField {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+}
+.noTeacher {
+  color: var(--color-warning);
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  background: var(--color-warning-bg);
+  border-radius: var(--radius-sm);
+  margin-top: 0.4rem;
+}
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}

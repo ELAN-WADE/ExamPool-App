@@ -1,0 +1,80 @@
+.page {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.questionCard,
+.modal {
+  background: var(--color-surface);
+  border: 1px solid #2a3458;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.options {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.option,
+.optionActive,
+.row button,
+.grid button {
+  border: 1px solid #32406d;
+  border-radius: 10px;
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  padding: 0.7rem;
+}
+
+.optionActive {
+  border-color: var(--color-primary);
+  background: #1d2d5f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.answered {
+  background: rgba(39, 174, 96, 0.2);
+}
+
+.unanswered {
+  background: rgba(235, 87, 87, 0.2);
+}
+
+.flagged {
+  background: rgba(242, 201, 76, 0.2);
+}
+
+.current {
+  outline: 2px solid var(--color-primary);
+}
+
+.row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.green {
+  color: #8ff0b7;
+}
+
+.yellow {
+  color: #ffe9a0;
+}
+
+.red {
+  color: #ffb8b8;
+}

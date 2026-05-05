@@ -1,0 +1,51 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  transition: transform 120ms ease, opacity 120ms ease, background-color 120ms ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.sm {
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.md {
+  padding: 0.6rem 0.95rem;
+  font-size: 0.95rem;
+}
+
+.lg {
+  padding: 0.8rem 1.1rem;
+  font-size: 1rem;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.secondary {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+}
+
+.danger {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+.ghost {
+  background: transparent;
+  border-color: #3f4d76;
+  color: var(--color-text);
+}

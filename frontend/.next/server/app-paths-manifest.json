@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/register/page": "app/register/page.js",
+  "/setup/page": "app/setup/page.js",
+  "/student/dashboard/page": "app/student/dashboard/page.js",
+  "/student/exam/page": "app/student/exam/page.js",
+  "/student/results/page": "app/student/results/page.js",
+  "/~offline/page": "app/~offline/page.js",
+  "/student/settings/page": "app/student/settings/page.js",
+  "/operator/dashboard/page": "app/operator/dashboard/page.js",
+  "/operator/settings/page": "app/operator/settings/page.js",
+  "/operator/subjects/page": "app/operator/subjects/page.js",
+  "/operator/users/page": "app/operator/users/page.js",
+  "/teacher/results/page": "app/teacher/results/page.js",
+  "/teacher/questions/page": "app/teacher/questions/page.js",
+  "/teacher/settings/page": "app/teacher/settings/page.js",
+  "/teacher/dashboard/page": "app/teacher/dashboard/page.js"
+}

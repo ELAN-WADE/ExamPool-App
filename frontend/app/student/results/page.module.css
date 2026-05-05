@@ -1,0 +1,32 @@
+.page { padding: 1.5rem; max-width: 800px; margin: 0 auto; }
+.error { color: var(--color-danger); background: var(--color-danger-bg); padding: 0.75rem 1rem; border-radius: var(--radius-md); }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.75rem; }
+.title { font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #eaf0ff, #9aa7c7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.statsRow { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 1.75rem; }
+.statCard { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 0.9rem 1rem; display: flex; align-items: center; gap: 0.65rem; }
+.statIcon { font-size: 1.4rem; }
+.statValue { font-size: 1.3rem; font-weight: 800; line-height: 1; }
+.statLabel { font-size: 0.72rem; color: var(--color-muted); margin-top: 0.15rem; }
+
+.empty { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 3.5rem 2rem; text-align: center; color: var(--color-muted); }
+.empty h2 { color: var(--color-text); }
+
+.cards { display: flex; flex-direction: column; gap: 0.85rem; }
+.card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.1rem 1.25rem; display: flex; align-items: center; gap: 1.1rem; transition: box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease); }
+.card:hover { box-shadow: var(--shadow-md); border-color: #28386a; }
+
+.cardLeft { flex-shrink: 0; }
+.gradeCircle { width: 48px; height: 48px; border-radius: 50%; border: 3px solid; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 800; }
+.cardBody { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+.subjectName { font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cardMeta { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.progressBar { height: 6px; background: var(--color-surface-3); border-radius: 999px; overflow: hidden; }
+.progressFill { height: 100%; border-radius: 999px; transition: width 0.5s var(--ease); }
+
+.footer { text-align: center; color: var(--color-muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--color-border); }
+
+@media print {
+  .header button, .header a { display: none; }
+  .card { box-shadow: none; border-color: #ccc; }
+}
